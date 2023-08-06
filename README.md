@@ -29,9 +29,13 @@ This structure is crafted to guide every data science professional and enthusias
 ├── reports
 │   └── figures
 └── src
+    ├── back_end
+    │   └── config
+    └── front_end
+        └── config
 ```
 
-## Folder Description
+## Folders Description
 
 ### data
 
@@ -54,7 +58,7 @@ Effective model governance is pivotal. This houses trained algorithms — from c
 
 Jupyter notebooks are indispensable tools in contemporary data science. This directory encapsulates distinct stages of the data science workflow:
 
-- **1_data_preparation**: Prep your datasets for exhaustive analysis.
+- **1_data_preparation**: Prepare your datasets for exhaustive analysis.
 - **2_exploratory_data_analysis_and_preprocessing**: A deep dive into data characteristics, visualization, and preprocessing to prime it for feature extraction.
 - **3_feature_engineering**: Devise and refine dataset attributes to elevate model efficacy.
 - **4_model_training_and_evaluation**: This stage involves honing data into valuable predictions through models. It involves iterative cycles of training, tuning, and evaluation.
