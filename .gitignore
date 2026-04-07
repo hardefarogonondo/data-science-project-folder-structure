@@ -1,5 +1,9 @@
-**/.DS_store
+**/.DS_Store
 **/.ipynb_checkpoints
+**/.pdm-build
+**/.pyc
+**/.pytest_cache
 **/.vscode
 **/__pycache__
 .env
+.pdm-python
