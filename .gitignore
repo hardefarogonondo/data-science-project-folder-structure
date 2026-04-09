@@ -14,14 +14,14 @@ Thumbs.db
 # =========================
 # Python & Virtual Env
 # =========================
+*.egg-info/
 .pdm-build/
 .venv/
 __pycache__/
-*.egg-info/
-.pdm-python
 *.pyc
 *.pyd
 *.pyo
+.pdm-python
 
 # =========================
 # Testing & Jupyter
@@ -34,6 +34,7 @@ htmlcov/
 # =========================
 # Secrets & Configurations
 # =========================
+.aws/
+*.pem
 .env
 credentials.json
-*.pem
