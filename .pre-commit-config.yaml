@@ -1,0 +1,39 @@
+# =========================================================================
+# Standard Data Science Pre-Commit Configuration
+# Run `pre-commit install` to enable.
+# Run `pre-commit run --all-files` to test against the entire codebase.
+# =========================================================================
+
+repos:
+  # 1. Standard Housekeeping & Security
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-added-large-files
+        args: ['--maxkb=5000']
+      - id: detect-private-key
+
+  # 2. Code Formatter: Black
+  - repo: https://github.com/psf/black
+    rev: 26.3.1
+    hooks:
+      - id: black
+        language_version: python3
+
+  # 3. Import Sorter: isort
+  - repo: https://github.com/PyCQA/isort
+    rev: 8.0.1
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
+
+  # 4. Fast Linter: Ruff
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.9
+    hooks:
+      - id: ruff
+        args: [ --fix ]
