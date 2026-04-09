@@ -1,11 +1,39 @@
-**/*.egg-info/
-**/.DS_Store
-**/.env
-**/.ipynb_checkpoints/
-**/.pdm-build/
-**/.pdm-python
-**/.pyc
-**/.pytest_cache/
-**/.venv/
-**/.vscode/
-**/__pycache__/
+# =========================
+# OS & Environment
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs & Editor Tools
+# =========================
+.idea/
+.kilo/
+.vscode/
+
+# =========================
+# Python & Virtual Env
+# =========================
+.pdm-build/
+.venv/
+__pycache__/
+*.egg-info/
+.pdm-python
+*.pyc
+*.pyd
+*.pyo
+
+# =========================
+# Testing & Jupyter
+# =========================
+.ipynb_checkpoints/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# =========================
+# Secrets & Configurations
+# =========================
+.env
+credentials.json
+*.pem
