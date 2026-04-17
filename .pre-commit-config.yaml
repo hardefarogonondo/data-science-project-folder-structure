@@ -17,23 +17,23 @@ repos:
         args: ['--maxkb=5000']
       - id: detect-private-key
 
-  # 2. Code Formatter: Black
-  - repo: https://github.com/psf/black
-    rev: 26.3.1
-    hooks:
-      - id: black
-        language_version: python3
-
-  # 3. Import Sorter: isort
+  # 2. Import Sorter: isort
   - repo: https://github.com/PyCQA/isort
     rev: 8.0.1
     hooks:
       - id: isort
         args: ["--profile", "black"]
 
-  # 4. Fast Linter: Ruff
+  # 3. Fast Linter: Ruff
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.15.9
     hooks:
       - id: ruff
         args: [ --fix ]
+
+  # 4. Code Formatter: Black
+  - repo: https://github.com/psf/black
+    rev: 26.3.1
+    hooks:
+      - id: black
+        language_version: python3
